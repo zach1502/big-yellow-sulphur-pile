@@ -9,6 +9,7 @@
 }
 
 .ButtonHolder {
+  
   display:flex;
   justify-content: center;
   place-items: center;
