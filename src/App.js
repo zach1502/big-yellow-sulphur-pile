@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Logo from './components/Logo.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Logo>The Big Yellow Sulphur Pile</Logo>
+      <img alt="The sulphur pile" className="SulphurImage" src="https://live.staticflickr.com/5253/5574931634_b8027c198d_b.jpg"></img>
+      <div className="ButtonHolder">
+        <button>About Us</button>
+        <button>Testimonials</button>
+        <button>Contact Us</button>
+      </div>
     </div>
   );
 }
