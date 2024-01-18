@@ -3,7 +3,8 @@
 }
 
 .SulphurImage {
-  height: 400px;
+  max-height: 400px;
+  width: auto;
   margin: 1rem;
 }
 
