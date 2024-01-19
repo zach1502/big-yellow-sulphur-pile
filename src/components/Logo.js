@@ -1,10 +1,10 @@
 import { React } from 'react'
 import './Logo.css'
 
-function Logo() {
+function Logo({text}) {
     return (
     <div className='Logo'>
-        <h1 className='LogoText'>The Big Yellow Sulphur Pile</h1>
+        <h1 className='LogoText'>{text}</h1>
     </div>  
     )
 }

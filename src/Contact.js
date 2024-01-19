@@ -1,5 +1,5 @@
 import { useNavigate} from 'react-router-dom';
-
+import Logo from './components/Logo';
 export default function Contact() {
     const navigate = useNavigate();
 
@@ -8,9 +8,10 @@ export default function Contact() {
       navigate('/');
     };
     return (
-      <div className='Page'>
+      <div className="Page">
+        <Logo text={"Contact Us"}></Logo>
+        <p style={{'fontSize':'xxl', 'width':'50%'}}>One of the most iconic landmarks of the North Shore waterfront is the lurid-yellow piles of sulphur. This 1979 photograph shows a high-angle view of the Vancouver Wharves, with several piles of sulphur visible in the open or under partially-covered areas. The sulphur is a by-product of natural gas processing.</p>
         <button onClick={navigateHome}>Return home</button>
       </div>
     );
-
 }
