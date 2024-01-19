@@ -7,6 +7,10 @@ export default function Contact() {
       // navigate to /
       navigate('/');
     };
-    return <h2> <button onClick={navigateHome}>Return home</button></h2>;
+    return (
+      <div className='Page'>
+        <button onClick={navigateHome}>Return home</button>
+      </div>
+    );
 
 }
