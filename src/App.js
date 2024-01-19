@@ -38,7 +38,7 @@ function Home() {
   };
   return (
     <div className="App">
-      <Logo></Logo>
+      <Logo text={"Big Yellow Sulphur Pile"}></Logo>
       <img alt="The sulphur pile" className="SulphurImage" src="https://live.staticflickr.com/5253/5574931634_b8027c198d_b.jpg"></img>
       <div className="ButtonHolder">
         <button onClick={navigateAbout}>About Us</button>
