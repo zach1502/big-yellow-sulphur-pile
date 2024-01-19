@@ -8,11 +8,11 @@ export default function App() {
   
   return (
     <div>
+        <Logo></Logo>
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contactus" element={<Contact />} />
-
          <Route path="/" element={<Home />} />
        </Routes>
 </div>
@@ -38,12 +38,10 @@ function Home() {
   };
   return (
     <div className="App">
-      <Logo></Logo>
       <img alt="The sulphur pile" className="SulphurImage" src="https://live.staticflickr.com/5253/5574931634_b8027c198d_b.jpg"></img>
       <div className="ButtonHolder">
         <button onClick={navigateAbout}>About Us</button>
         <button onClick={navigateTestimonials}>Testimonials</button>
-        
         <button onClick={navigateContactUs}>Contact Us</button>
       </div>
     </div>
