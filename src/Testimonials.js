@@ -1,5 +1,36 @@
 import {useNavigate} from 'react-router-dom';
 import Logo from './components/Logo';
+import Testimonial from './components/Testimonial';
+import './Testimonials.css'
+
+const mockData = [
+  {
+    "review":"The finest dried urine anywhere!",
+    "reviewer":"Eric B",
+    "stars":5
+  },
+  {
+    "review":"It's big, it's yellow, it's a sulphur pile. Couldn't tick those boxes any better.",
+    "reviewer":"Hermione W",
+    "stars":5
+  },
+  {
+    "review":"I was disappointed to learn it wasn't a large pile of butter-flavoured popcorn seasoning",
+    "reviewer":"Phil M",
+    "stars":5
+  },
+  {
+    "review":"It truly is the biggest yellow sulphur pile you can find in the Vancouver harbour area.",
+    "reviewer":"Sylvain B",
+    "stars":5
+  },
+  {
+    "review":"Such a great big yellow Sulphur pile - just incredible! Not many words can describe the joy of finding out what the big yellow pile actually is!",
+    "reviewer":"Max B",
+    "stars":5
+  }
+]
+
 export default function Testimonials() {
     const navigate = useNavigate();
 
@@ -7,10 +38,17 @@ export default function Testimonials() {
       // navigate to /
       navigate('/');
     };
+
+    const makeTestimonials = (data) => {
+      return data.map((x) => <Testimonial key={x.reviewer+x.stars} review={x.review} reviewer={x.reviewer} stars={x.stars}/>);
+    }
+
     return (
-      <div className="Page">
-        <Logo text={"Testimonial"}></Logo>
-        <p style={{'fontSize':'xxl', 'width':'50%'}}>One of the most iconic landmarks of the North Shore waterfront is the lurid-yellow piles of sulphur. This 1979 photograph shows a high-angle view of the Vancouver Wharves, with several piles of sulphur visible in the open or under partially-covered areas. The sulphur is a by-product of natural gas processing.</p>
+      <div className='Page'>
+        <Logo text={'Testimonials'}></Logo>
+        <div className='Testimonials'>
+          {makeTestimonials(mockData)}
+        </div>
         <button onClick={navigateHome}>Return home</button>
       </div>
     );

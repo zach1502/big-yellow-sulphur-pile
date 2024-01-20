@@ -1,0 +1,32 @@
+.Testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    outline: solid gold 6px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 33%;
+}
+
+@media only screen and (max-width: 800px) {
+    .Testimonial {
+        width: 75%;
+    }
+
+    .Review {
+        font-size: large!important;
+    }
+}
+
+.Review {
+    font-size: xx-large;
+}
+
+.Reviewer {
+    font-style: italic;
+}
+
+.Star {
+    color: gold;
+    font-size: xx-large;
+}
