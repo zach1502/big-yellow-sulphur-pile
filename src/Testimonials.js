@@ -10,7 +10,7 @@ const mockData = [
     "stars":5
   },
   {
-    "review":"It's big, it's yellow, it's a sulphur pile. Couldn't tick those boxes any better. View from the Grouse.",
+    "review":"It's big, it's yellow, it's a sulphur pile. Couldn't tick those boxes any better.",
     "reviewer":"Hermione W",
     "stars":5
   },
@@ -45,7 +45,7 @@ export default function Testimonials() {
 
     return (
       <div className='Page'>
-        <Logo text={'Testimonial'}></Logo>
+        <Logo text={'Testimonials'}></Logo>
         <div className='Testimonials'>
           {makeTestimonials(mockData)}
         </div>
