@@ -13,7 +13,7 @@ const mockData = [
     "review":"It's big, it's yellow, it's a sulphur pile. Couldn't tick those boxes any better.",
     "reviewer":"Hermione W",
     "stars":5
-  },
+  }, 
   {
     "review":"I was disappointed to learn it wasn't a large pile of butter-flavoured popcorn seasoning",
     "reviewer":"Phil M",
