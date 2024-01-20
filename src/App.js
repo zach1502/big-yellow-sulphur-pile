@@ -1,21 +1,23 @@
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+
+import Sulfur from './components/Sulfur.jsx';
 import Logo from './components/Logo.js'
 import './App.css';
 import About from './About.js';
 import Testimonials from './Testimonials.js';
 import Contact from './Contact.js';
+
 export default function App() {
-  
   return (
     <div>
-        <Logo></Logo>
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contactus" element={<Contact />} />
-         <Route path="/" element={<Home />} />
-       </Routes>
-</div>
+      <Logo/>
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contactus" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
   );
 }
 
@@ -39,6 +41,7 @@ function Home() {
   return (
     <div className="App">
       <Logo text={"Big Yellow Sulphur Pile"}></Logo>
+      <Sulfur />
       <img alt="The sulphur pile" className="SulphurImage" src="https://live.staticflickr.com/5253/5574931634_b8027c198d_b.jpg"></img>
       <div className="ButtonHolder">
         <button onClick={navigateAbout}>About Us</button>
@@ -48,6 +51,6 @@ function Home() {
     </div>
   );
 }
- 
+
 
 
