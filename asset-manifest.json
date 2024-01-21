@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/big-yellow-sulphur-pile/static/css/main.be06cc5e.css",
-    "main.js": "/big-yellow-sulphur-pile/static/js/main.8c482c31.js",
+    "main.js": "/big-yellow-sulphur-pile/static/js/main.b30b64a7.js",
     "index.html": "/big-yellow-sulphur-pile/index.html",
     "main.be06cc5e.css.map": "/big-yellow-sulphur-pile/static/css/main.be06cc5e.css.map",
-    "main.8c482c31.js.map": "/big-yellow-sulphur-pile/static/js/main.8c482c31.js.map"
+    "main.b30b64a7.js.map": "/big-yellow-sulphur-pile/static/js/main.b30b64a7.js.map"
   },
   "entrypoints": [
     "static/css/main.be06cc5e.css",
-    "static/js/main.8c482c31.js"
+    "static/js/main.b30b64a7.js"
   ]
 }
