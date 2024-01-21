@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
 import Sulfur from './components/Sulfur.jsx';
 import Logo from './components/Logo.js'
@@ -11,12 +11,14 @@ export default function App() {
   return (
     <div>
       <Logo/>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contactus" element={<Contact />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contactus" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
