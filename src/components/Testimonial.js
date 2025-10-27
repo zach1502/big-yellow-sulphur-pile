@@ -2,10 +2,14 @@ import { React } from 'react'
 import './Testimonial.css'
 
 function Testimonial(props) {
-
     const makeStars = () => {
-        return new Array(Number(props.stars) + 1).join("★") + new Array(5 - Number(props.stars) + 1).join("☆");
-    }
+      const stars = Math.round(Number(props.stars));
+      const clamped = Math.max(0, Math.min(5, stars));
+      return (
+        new Array(clamped + 1).join("★") +
+        new Array(5 - clamped + 1).join("☆")
+      );
+    };
 
     return (
         <div className='Testimonial'>
