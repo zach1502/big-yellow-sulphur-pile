@@ -37,7 +37,7 @@ const mockData = [
     review:
       "Standing before North Vancouver's Big Yellow Sulphur Pile, I touched its vibrant crystals, breathing in the sharp legacy of earth transformed. This moment, a delicate dance between human ambition and nature's bounty, whispered a profound connection, reminding me of our intertwined destinies with the planet's raw elements.",
     reviewer: "Peyman Z",
-    stars: 4.9,
+    stars: 4,
   },
 ];
 
